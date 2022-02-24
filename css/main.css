@@ -13,6 +13,7 @@
         flex-direction: column;
         height: 100%;
         font-family: "Gilroy", "Arial", sans-serif;
+        background-color: #dddeee;
     }
     
     .container {
@@ -199,20 +200,25 @@
     }
     
     .hero {
-        width: 100%;
-        height: 800px;
+        width: 1600px;
         background-color: rgba(118, 167, 19, 0.31);
-        background-image: url(../img/vegetables.png);
-        background-repeat: no-repeat;
-        background-size: 684px 440px;
-        background-position: right 100px center;
+        margin: 0 auto;
     }
     
     .hero2 {
+        height: 800px;
+        background-image: url(../img/vegetables.png);
+        background-repeat: no-repeat;
+        background-size: 684px 440px;
+        background-position: right -15px center;
+    }
+    
+    .hero3 {
+        max-width: 100%;
         background-image: url(../img/tag-meta.png);
         background-repeat: no-repeat;
         background-size: 133px 321px;
-        background-position: right 115px bottom 500px;
+        background-position: right -15px bottom 700px;
     }
     
     .hero-content {
@@ -222,9 +228,6 @@
     }
     
     .hero-button {
-        position: absolute;
-        top: 520px;
-        left: 45px;
         padding-top: 10px;
         padding-left: 20px;
         padding-right: 20px;
@@ -232,6 +235,7 @@
         background-color: #76A713;
         border: 1px solid rgba(118, 167, 19, 0.31);
         cursor: pointer;
+        transform: translateX(-120px) translateY(400px);
     }
     
     .hero-button:hover {
@@ -273,11 +277,11 @@
     }
     
     .hero-button2 {
-        position: absolute;
-        left: 1400px;
+        left: 1382px;
         border: 1px solid gray;
         background-color: rgb(236, 202, 202);
         cursor: pointer;
+        transform: translateX(1140px) translateY(-400px);
     }
     
     .hero-button2:hover {
@@ -313,14 +317,23 @@
         margin-right: 20px;
     }
     
+    .about1 {
+        width: 1600px;
+        background-color: #ffffff;
+        margin: 0 auto;
+    }
+    
     .about {
+        display: flex;
         padding-top: 197px;
+        width: 1600px;
+        background-color: #ffffff;
     }
     
     .about-container {
         display: flex;
         align-items: center;
-        padding-bottom: 100px;
+        position: relative;
     }
     
     .about-left__section {
@@ -345,7 +358,7 @@
     .about-right__section {
         padding-left: 25px;
         position: relative;
-        bottom: 39px;
+        bottom: 55px;
     }
     
     .about-right-section__quality {
@@ -359,7 +372,7 @@
     }
     
     .about-right-section__text {
-        width: 570px;
+        width: 550px;
         text-align: justify;
         font-style: normal;
         font-weight: 500;
@@ -377,7 +390,8 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 22px;
-        color: #AAAAAA;
+        color: #aaaaaa;
+        position: relative;
     }
     
     .about-right__section__text2-span {
@@ -414,4 +428,171 @@
         line-height: 18px;
         color: #aaaaaa;
         margin-top: 3px;
+    }
+    /* section3 started*/
+    
+    .section3-container {
+        width: 100%;
+        background-color: #f8f8f8;
+        padding-bottom: 200px;
+    }
+    
+    .s3-inner-container {
+        max-width: 1200px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: 100px;
+        left: 15px;
+        background-color: #f8f8f8;
+    }
+    
+    .section3-box {
+        margin-right: 30px;
+        width: 270px;
+        text-align: center;
+        border: 1px solid #76A713;
+        box-sizing: border-box;
+    }
+    
+    .section3-box2:hover {
+        box-shadow: 0 0 9px 9px #dddddd;
+        transition: box-shadow 0.6s ease;
+    }
+    
+    .section3-box:hover {
+        box-shadow: 0 0 9px 9px #76A713;
+        transition: box-shadow 0.6s ease;
+    }
+    
+    .section3-box:active {
+        background-color: #f8f8f8;
+        opacity: 0.9;
+    }
+    
+    .section3-box2 {
+        background-color: #ffffff;
+        border: 1px solid #dddddd;
+    }
+    
+    .section3-box-img {
+        margin-top: 23px;
+        margin-bottom: 3px;
+        padding: 0 35px;
+    }
+    
+    .section3-box:last-child {
+        margin-right: 0;
+    }
+    
+    .section3-veges__fruits {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 44px;
+        color: #000000;
+        cursor: default;
+    }
+    
+    .section3-veges {
+        color: #76A713;
+    }
+    
+    .section3-button {
+        padding: 3%;
+        background-color: transparent;
+        border: 1px solid #76A713;
+        cursor: pointer;
+        margin-bottom: 30px;
+    }
+    
+    .section3-button:active {
+        background-color: #76A713;
+        opacity: 0.6;
+    }
+    
+    .section3-text {
+        width: 223px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        color: #888888;
+        margin-left: 24px;
+    }
+    /* two sections started  */
+    
+    .two-sections {
+        display: flex;
+        position: relative;
+        top: 100px;
+        align-items: center;
+        padding-bottom: 100px;
+        text-transform: uppercase;
+    }
+    
+    .two-sections-left {
+        width: 585px;
+        background-color: #76A713;
+        background-image: url(../img/lots-of__veges.png);
+        background-repeat: no-repeat;
+        background-position: left bottom;
+    }
+    
+    .two-sections-left__discount {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    
+    .two-sections-left__text {
+        width: 320px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 59px;
+        text-align: right;
+        color: #FFFFFF;
+    }
+    
+    .two-sections-left__texts {
+        padding: 46px 46px;
+        text-align: end;
+    }
+    
+    .buy-link {
+        padding: 11px 19px;
+        background-color: #ff6600;
+    }
+    
+    .two-sections-right {
+        width: 585px;
+        background-color: #ff6600;
+        background-image: url(../img/lots-of__veges.png);
+        background-repeat: no-repeat;
+        background-position: left bottom;
+    }
+    
+    .two-sections-left__text {
+        transform: translateX(55%);
+        padding-bottom: 29px;
+    }
+    
+    .two-sections__right {
+        background-image: url(../img/lots-of__fruits.png);
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: 62%;
+        background-color: #ff6600;
+    }
+    
+    .buy-link2 {
+        background-color: #76A713;
     }
